@@ -4,4 +4,4 @@ python-dotenv
 aiofiles
 langdetect
 openai
-
+python-multipart
