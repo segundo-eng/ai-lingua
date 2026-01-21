@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>🌍 AI-Lingua</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <header>
+        <h1>🌍 AI-Lingua</h1>
+        <p class="subtitle">Intérprete con IA en tiempo real</p>
+    </header>
+
+    <!-- ESTADO -->
+    <div id="status" class="status idle">
+        Pulsa y habla con claridad (mejor frases cortas)
+    </div>
+
+    <!-- LOADER -->
+    <div id="loader" class="loader hidden"></div>
+
+    <!-- MICRÓFONO -->
+    <button id="recordBtn" class="mic-btn">
+        🎙️
+    </button>
+
+    <!-- RESULTADO PRINCIPAL -->
+    <div class="result">
+
+        <div class="translation-card">
+            <strong>Traducción</strong>
+            <p id="translated">---</p>
+            <p id="direction" class="direction"></p>
+            <button id="repeatBtn" disabled>🔊 Repetir</button>
+            <button id="resetBtn" class="reset-btn">🔄 Nueva traducción</button>
+        </div>
+
+        <!-- VIÑETAS INFORMATIVAS -->
+        <div class="info-grid">
+
+            <div class="info-card">
+                <span class="info-title">Idioma detectado</span>
+                <span id="detected" class="info-value">---</span>
+            </div>
+
+            <div class="info-card">
+                <span class="info-title">Texto original</span>
+                <p id="original" class="info-value">---</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <p class="ethic">
+                           ⚠️ Usa frases respetuosas. 
+	               Powered by IESO Publio López Mondéjar
+				Casasimarro - Cuenca
+    </p>
+
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
